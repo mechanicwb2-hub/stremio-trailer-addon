@@ -1,0 +1,16 @@
+{
+  "name": "stremio-trailer-addon-vercel",
+  "version": "1.0.0",
+  "description": "Stremio add-on for YouTube trailer links (Vercel serverless)",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "keywords": ["stremio", "addon", "trailer", "youtube", "serverless"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "stremio-addon-sdk": "^1.6.9",
+    "node-fetch": "^2.6.7"
+  }
+}
