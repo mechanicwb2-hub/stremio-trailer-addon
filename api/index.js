@@ -5,15 +5,15 @@ const TMDB_API_KEY = process.env.TMDB_API_KEY || '';
 
 const manifest = {
     id: 'com.trailers.youtube.addon',
-    version: '1.0.0',
+    version: '1.0.1',
     name: 'YouTube Trailers',
     description: 'Direct links to YouTube trailers - No buffering!',
     resources: ['stream'],
     types: ['movie', 'series'],
     catalogs: [],
     idPrefixes: ['tt'],
-    background: 'https://i.imgur.com/zDXqFsA.jpg',
-    logo: 'https://i.imgur.com/44FN6mf.png'
+    background: 'https://images.unsplash.com/photo-1574267432644-f05f41dc1799?w=1920&h=1080&fit=crop',
+    logo: 'https://cdn-icons-png.flaticon.com/512/1384/1384060.png'
 };
 
 async function getTMDBInfo(imdbId, type) {
