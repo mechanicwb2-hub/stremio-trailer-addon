@@ -75,9 +75,12 @@ const addonInterface = {
                     return {
                         streams: [{
                             name: '🎬 Search Trailer on YouTube',
-                            description: 'Search for trailer',
-                            url: `https://www.youtube.com/results?search_query=${imdbId}+official+trailer`,
-                            behaviorHints: { notWebReady: true }
+                            title: 'Search for trailer',
+                            externalUrl: `https://www.youtube.com/results?search_query=${imdbId}+official+trailer`,
+                            behaviorHints: { 
+                                notWebReady: true,
+                                bingeGroup: 'trailer'
+                            }
                         }]
                     };
                 }
@@ -88,18 +91,24 @@ const addonInterface = {
                     return {
                         streams: [{
                             name: '▶️ Watch Trailer',
-                            description: `${tmdbInfo.name} - Official Trailer`,
-                            url: trailerUrl,
-                            behaviorHints: { notWebReady: true }
+                            title: `${tmdbInfo.name} - Official Trailer`,
+                            externalUrl: trailerUrl,
+                            behaviorHints: { 
+                                notWebReady: true,
+                                bingeGroup: 'trailer'
+                            }
                         }]
                     };
                 } else {
                     return {
                         streams: [{
                             name: '🔍 Search Trailer',
-                            description: `Search for "${tmdbInfo.name}" trailer`,
-                            url: `https://www.youtube.com/results?search_query=${encodeURIComponent(tmdbInfo.name + ' official trailer')}`,
-                            behaviorHints: { notWebReady: true }
+                            title: `Search for "${tmdbInfo.name}" trailer`,
+                            externalUrl: `https://www.youtube.com/results?search_query=${encodeURIComponent(tmdbInfo.name + ' official trailer')}`,
+                            behaviorHints: { 
+                                notWebReady: true,
+                                bingeGroup: 'trailer'
+                            }
                         }]
                     };
                 }
