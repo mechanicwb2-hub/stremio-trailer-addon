@@ -13,7 +13,12 @@ const manifest = {
     catalogs: [],
     idPrefixes: ['tt'],
     background: 'https://images.unsplash.com/photo-1574267432644-f05f41dc1799?w=1920&h=1080&fit=crop',
-    logo: 'https://cdn-icons-png.flaticon.com/512/1384/1384060.png'
+    logo: 'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
+    // Certificação Stremio Addons
+    stremioAddonsConfig: {
+        issuer: 'https://stremio-addons.net',
+        signature: 'eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..pB-EC9zlZduz6a-zU0OxsQ.R_CydhOhJx12LAA6b5K_c7GxYcxMu0e1FlAGC9elpvhCZJPtVMwdsTEnbMXROVZL9FNBERr9Z2kF45wFQN7uLN5fHXV3MmSqGmO2hHnic-oc3vcbzQ0rl2LUmo8uTXM8.1uu_6hsolyXULB6kmaghdQ'
+    }
 };
 
 async function getTMDBInfo(imdbId, type) {
